@@ -7,9 +7,9 @@ app = Flask(__name__)
 def content():
     return extract_content(request.data)
 
-@app.route('/comments', methods=['POST'])
+@app.route('/content-comments', methods=['POST'])
 def comments():
-    return extract_comments(request.data)
+    return extract_content_and_comments(request.data)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
