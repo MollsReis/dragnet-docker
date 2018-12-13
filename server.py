@@ -1,5 +1,5 @@
 from flask import Flask, request
-from dragnet import extract_content
+from dragnet import extract_content, extract_content_and_comments
 
 app = Flask(__name__)
 
